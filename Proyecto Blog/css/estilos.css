@@ -46,6 +46,12 @@ nav>ul>li {
     float: left;
 }
 
+.clearfix {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 nav ul::after {
     content: "";
     display: block;
