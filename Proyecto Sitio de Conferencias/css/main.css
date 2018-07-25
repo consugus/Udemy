@@ -55,12 +55,7 @@ hr {
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+audio, canvas, iframe, img, svg, video {
     vertical-align: middle;
 }
 
@@ -97,7 +92,107 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html {
+  box-sizing: border-box;
+}
 
+*,*:after,*:before {
+  box-sizing: inherit;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* header */
+.hero {
+    background-image: url(../img/ImagenesSitioWeb/encabezado.jpg);
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+}
+
+@media only scree and (min-width: 768px){
+    .redes-sociales{
+        padding-top: 10px;
+    }
+}
+
+.redes-sociales {
+    text-align: center;
+    padding-top: 40px;
+}
+nav.redes-sociales a {
+    color: white;
+    font-size: 2em;
+    margin-right: 20px;
+}
+
+nav.redes-sociales a:last-child {
+    margin-right: 0;
+}
+
+@media only screen and (min-width: 768px){
+    div.informacion-evento{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+.informacion-evento {
+    text-align: center;
+    color:white;
+}
+
+.informacion-evento p.fecha p.ciudad {
+    margin: 0;
+    display: inline;
+    text-transform: uppercase;
+}
+
+.informacion-evento p i{
+    color: #fe4918;
+    font-size: 2rem;
+}
+p.fecha{
+    float: left
+}
+
+p.ciudad{
+    float: right;
+    text-align: right;
+}
+
+.informacion-evento span{
+    font-weight: bold;
+}
+div h1.nombre-sitio {
+    font-size: 6.9vw;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 1;
+    margin:0;
+}
+
+div p .slogan {
+    margin: 0;div h1.nombre-sitio {
+    font-size: 6.9vw;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+}
+
+@media only screen and (min-width: 768px){
+    h1.nombre-sitio {
+        font-size: 11.5vw;
+        /* margin: -1em; */
+    }
+}
 
 
 
