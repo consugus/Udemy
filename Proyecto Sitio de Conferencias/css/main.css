@@ -112,6 +112,8 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+
+
 /* Comienzo Estilos globales */
 .contenedor {
   width: 98%;
@@ -127,7 +129,7 @@ body {
 
 @media only screen and( min-width: 768px) {
   .contenedor {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
   }
 }
@@ -140,8 +142,29 @@ body {
   }
 }
 
+.seccion {
+    padding: 30px 0;
+}
+
+.seccion p {
+    font-size: 1.2em;
+    text-align: center
+}
+
 h2 {
   font-family: "Oswald", sans-serif;
+  font-size: 2.4em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2::after{
+    content:'';
+    margin: 0 auto;
+    background-image: url(../img/ImagenesSitioWeb/separador.png);
+    width: 100px;
+    height: 30px;
+    display:block;
 }
 
 /* Fin Estilos Globales */
@@ -327,9 +350,9 @@ div.menu-movil:hover{
   div.menu-movil {
       display: none;
   }
-
 }
 
+/* Descripción del Evento */
 
 
 
