@@ -195,6 +195,12 @@ h3{
   float: right;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 /* Fin Estilos Globales */
 
 /* Comienzo header */
@@ -277,9 +283,9 @@ div p .slogan {
   }
 }
 
-.site-header {
+/* .site-header {
   display: none;
-}
+} */
 
 /* Fin header */
 
@@ -467,6 +473,56 @@ div.info-curso div:first-child{
 div.detalle-evento p i{
   color: #fe4918;
 }
+div.detalle-evento {
+  padding: 0 60px;
+}
+
+/* Estilos para la sección de invitados */
+ul.lista-invitados {
+  border: 2px solid black;
+  text-align: center;
+  /* margin: 20px auto; */
+}
+
+ul.lista-invitados li {
+  padding: 20px;
+  float: left;
+}
+
+@media only screen and (min-width: 480){
+  width: 50%;
+}
+
+@media only screen and (min-width: 768){
+  width: 33.30%;
+}
+
+div.invitado {
+  position: relative;
+  overflow: hidden;
+}
+
+div.invitado img {
+  max-width: 100%;
+}
+
+div.invitado p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px 10px;
+  margin: 0;
+  background-color: rgba(63, 63, 63, 0.6);
+  width: 100%;
+  color:#fe4918;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+
+
 
 
 
