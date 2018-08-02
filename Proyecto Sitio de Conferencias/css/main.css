@@ -112,9 +112,8 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-
-
 /* Comienzo Estilos globales */
+
 .contenedor {
   width: 98%;
   margin: 0 auto;
@@ -143,12 +142,12 @@ body {
 }
 
 .seccion {
-    padding: 30px 0;
+  padding: 30px 0;
 }
 
 .seccion p {
-    font-size: 1.2em;
-    text-align: center
+  font-size: 1.2em;
+  text-align: center;
 }
 
 h2 {
@@ -158,26 +157,26 @@ h2 {
   text-align: center;
 }
 
-h2::after{
-    content:'';
-    margin: 0 auto;
-    background-image: url(../img/ImagenesSitioWeb/separador.png);
-    width: 100px;
-    height: 30px;
-    display:block;
+h2::after {
+  content: "";
+  margin: 0 auto;
+  background-image: url(../img/ImagenesSitioWeb/separador.png);
+  width: 100px;
+  height: 30px;
+  display: block;
 }
 
-h3{
+h3 {
   font-size: 1.8em;
   font-family: "PT Sans", sans-serif;
   color: #fe4918;
   margin: 0 auto;
 }
 
-.button{
+.button {
   background-color: #fe4918;
   padding: 10px 40px;
-  color:white;
+  color: white;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   font-weight: bold;
@@ -187,11 +186,11 @@ h3{
   transition: all 0.3 ease;
 }
 
-.button:hover{
+.button:hover {
   background-color: #e33000;
 }
 
-.float-rigth{
+.float-rigth {
   float: right;
 }
 
@@ -204,6 +203,7 @@ ul {
 /* Fin Estilos Globales */
 
 /* Comienzo header */
+
 .hero {
   background-image: url(../img/ImagenesSitioWeb/encabezado.jpg);
   background-position: top center;
@@ -221,6 +221,7 @@ ul {
   text-align: center;
   padding-top: 40px;
 }
+
 nav.redes-sociales a {
   color: white;
   font-size: 2em;
@@ -253,6 +254,7 @@ nav.redes-sociales a:last-child {
   color: #fe4918;
   font-size: 2rem;
 }
+
 p.fecha {
   float: left;
 }
@@ -265,6 +267,7 @@ p.ciudad {
 .informacion-evento span {
   font-weight: bold;
 }
+
 div h1.nombre-sitio {
   font-size: 6.9vw;
   text-transform: uppercase;
@@ -283,9 +286,9 @@ div p .slogan {
   }
 }
 
-/* .site-header {
+.site-header {
   display: none;
-} */
+}
 
 /* Fin header */
 
@@ -310,17 +313,17 @@ div.logo img {
 }
 
 nav.navegacion-principal a:hover {
-    background-color: #fe4918;
-    transition: all 0.3s ease-in;
+  background-color: #fe4918;
+  transition: all 0.3s ease-in;
 }
 
 nav.navegacion-principal a:last-child {
-    color: #fe4918;
-    border: 2px solid  #fe4918;
+  color: #fe4918;
+  border: 2px solid #fe4918;
 }
 
 nav.navegacion-principal a:last-child:hover {
-    color: white;
+  color: white;
 }
 
 nav.navegacion-principal {
@@ -328,37 +331,38 @@ nav.navegacion-principal {
 }
 
 /* Menú movil */
-div.menu-movil{
-    width: 40px;
-    display: block;
-    float: right;
-    text-align: right;
-    margin-top: 12px;
-    color: white;
+
+div.menu-movil {
+  width: 40px;
+  display: block;
+  float: right;
+  text-align: right;
+  margin-top: 12px;
+  color: white;
 }
 
-div.menu-movil span{
-    height: 4px;
-    margin-bottom: 6px;
-    background-color: white;
-    display: block;
+div.menu-movil span {
+  height: 4px;
+  margin-bottom: 6px;
+  background-color: white;
+  display: block;
 }
 
-div.menu-movil:hover{
-    cursor: pointer;
+div.menu-movil:hover {
+  cursor: pointer;
 }
 
 .navegacion-principal a {
-    color: white;
-    text-decoration: none;
-    font-family: "Oswald", sans-serif;
-    text-transform:uppercase;
-    font-size: 0.95em;
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-    margin: 10px 0;
-  }
+  color: white;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.95em;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin: 10px 0;
+}
 
 @media only screen and (min-width: 768px) {
   div.logo {
@@ -367,38 +371,37 @@ div.menu-movil:hover{
   nav.navegacion-principal {
     display: inline-block;
     width: 70%;
-    float:right;
+    float: right;
     text-align: right;
-    padding:2px;
+    padding: 2px;
   }
-
   .navegacion-principal a {
-      margin-right:20px;
-      padding: 5px;
-      display: inline-block;
-      width: auto;
-      text-align: center;
-      margin: 10px 0;
+    margin-right: 20px;
+    padding: 5px;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    margin: 10px 0;
   }
-
   div.menu-movil {
-      display: none;
+    display: none;
   }
 }
+
 /* Fin Barra */
 
-
 /* Estilos para la Sección Programa */
-section.programa{
+
+section.programa {
   position: relative;
 }
 
-div.contenedor-video{
+div.contenedor-video {
   max-width: 100%;
   overflow: hidden;
 }
 
-div.contenido-programa{
+div.contenido-programa {
   position: absolute;
   top: 0;
   left: 0;
@@ -406,35 +409,37 @@ div.contenido-programa{
   width: 100%;
 }
 
-div.programa-evento{
+div.programa-evento {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 15px;
   margin-top: 80px;
   margin-left: 30px;
 }
 
-@media only screen and (min-width: 768px){
-  div.programa-evento{
+@media only screen and (min-width: 768px) {
+  div.programa-evento {
     width: 70%;
     margin-left: 50px;
   }
 }
-@media only screen and (min-width: 992px){
-  div.programa-evento{
+
+@media only screen and (min-width: 992px) {
+  div.programa-evento {
     width: 50%;
     margin-left: 80px;
   }
 }
 
 /* Estilos para el menú de Conferencias */
-nav.menu-programa{
+
+nav.menu-programa {
   width: 100%;
   border-bottom: 3px solid #fe4918;
   padding-bottom: 10px;
 }
 
-@media only screen and (min-width: 768px){
-  nav.menu-programa{
+@media only screen and (min-width: 768px) {
+  nav.menu-programa {
     display: table;
   }
 }
@@ -448,8 +453,9 @@ nav.menu-programa a {
   margin-bottom: 10px;
   font-size: 1.2em;
 }
-@media only screen and (min-width: 768px){
-  nav.menu-programa a{
+
+@media only screen and (min-width: 768px) {
+  nav.menu-programa a {
     display: table-cell;
   }
 }
@@ -461,40 +467,41 @@ nav.menu-programa a i {
 }
 
 /* Estilos para los detalles de los eventos */
-div.detalle-evento{
+
+div.detalle-evento {
   margin-top: 20px;
   font-size: 20px;
 }
 
-div.info-curso div:first-child{
+div.info-curso div:first-child {
   border-bottom: 3px solid rgba(0, 0, 0, 0.5);
 }
 
-div.detalle-evento p i{
+div.detalle-evento p i {
   color: #fe4918;
 }
+
 div.detalle-evento {
   padding: 0 60px;
 }
 
 /* Estilos para la sección de invitados */
-ul.lista-invitados {
-  border: 2px solid black;
-  text-align: center;
-  /* margin: 20px auto; */
-}
 
 ul.lista-invitados li {
-  padding: 20px;
+  padding: 10px;
   float: left;
 }
 
-@media only screen and (min-width: 480){
-  width: 50%;
+@media only screen and (min-width: 480px) {
+  ul.lista-invitados li {
+    width: 50%;
+  }
 }
 
-@media only screen and (min-width: 768){
-  width: 33.30%;
+@media only screen and (min-width: 768px) {
+  ul.lista-invitados li {
+    width: 33.3%;
+  }
 }
 
 div.invitado {
@@ -502,8 +509,17 @@ div.invitado {
   overflow: hidden;
 }
 
+
 div.invitado img {
   max-width: 100%;
+  filter: grey;
+  -webkit-filter: grayscale(1);
+  transition: all 0.5s ease-in-out;
+}
+
+div.invitado:hover img {
+  -webkit-filter: none;
+  -webkit-transform: scale(1.05);
 }
 
 div.invitado p {
@@ -514,17 +530,18 @@ div.invitado p {
   margin: 0;
   background-color: rgba(63, 63, 63, 0.6);
   width: 100%;
-  color:#fe4918;
+  color: #fe4918;
   font-family: "Oswald", sans-serif;
   font-size: 1.2em;
   text-align: left;
   text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
 }
 
-
-
-
-
+div.invitado:hover p {
+  bottom: -80px;
+  opacity: 0;
+}
 
 /* ==========================================================================
    Helper classes
@@ -556,7 +573,8 @@ div.invitado p {
   padding: 0;
   position: absolute;
   width: 1px;
-  white-space: nowrap; /* 1 */
+  white-space: nowrap;
+  /* 1 */
 }
 
 /*
@@ -598,8 +616,10 @@ div.invitado p {
 
 .clearfix:before,
 .clearfix:after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
 }
 
 .clearfix:after {
@@ -634,35 +654,30 @@ div.invitado p {
   *:before,
   *:after {
     background: transparent !important;
-    color: #000 !important; /* Black prints faster */
+    color: #000 !important;
+    /* Black prints faster */
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }
-
   a,
   a:visited {
     text-decoration: underline;
   }
-
   a[href]:after {
     content: " (" attr(href) ")";
   }
-
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
-
   /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
   }
-
   pre {
     white-space: pre-wrap !important;
   }
@@ -671,28 +686,23 @@ div.invitado p {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
-
   /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
   thead {
     display: table-header-group;
   }
-
   tr,
   img {
     page-break-inside: avoid;
   }
-
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3;
   }
-
   h2,
   h3 {
     page-break-after: avoid;
