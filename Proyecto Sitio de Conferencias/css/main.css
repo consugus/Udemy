@@ -193,6 +193,15 @@ h3 {
   color: #fe4918;
 }
 
+.button.transparent {
+  background-color: transparent;
+  border-color: white;
+}
+
+.button.transparent:hover {
+  border-color: #fe4918;
+}
+
 .button.hollow:hover {
   background-color: white;
   color:brown;
@@ -522,7 +531,6 @@ div.invitado {
   overflow: hidden;
 }
 
-
 div.invitado img {
   max-width: 100%;
   filter: grey;
@@ -672,6 +680,122 @@ div.tabla-precios p.numero {
   color: black;
   margin-top: 20px;
 }
+
+/* Mama */
+div.mapa {
+  height: 480px;
+  background-color: coral;
+}
+div.testimonial p i {
+  color: #fe4918;
+}
+
+/* testimoniales */
+div.testimoniales {
+  padding-bottom: 20px;
+}
+
+div.testimonial {
+  padding: 5px;
+}
+
+@media only screen and (min-width: 768px){
+  div.testimonial {
+    float: left;
+    width: 33.3%;
+  }
+}
+
+blockquote {
+  background-color: white;
+  border: 2px solid grey;
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+blockquote p {
+  text-align: justify !important;
+  font-size: 0.8em !important;
+  font-family: "PT sans", sans-serif;
+  padding: 0 25px 0 65px;
+}
+
+blockquote p::before {
+  content: "\201c";
+  position: absolute;
+  font-size: 8em;
+  color: #fe4918;
+  margin: 0;
+  padding: 0;
+  top: 10px;
+  left: 13px;
+  line-height: 1;
+}
+
+footer.info-testimonial {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+footer.info-testimonial img {
+  border-radius: 50%;
+  float: left;
+  margin-left: 24px;
+  width: 20%;
+}
+
+footer.info-testimonial cite {
+  float: right;
+  color: #fe4918;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  width: 66.6%;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 20px 25px 0 10px;
+  margin-right: 25px;
+}
+
+footer.info-testimonial cite span {
+  color: black;
+  display: block;
+  text-transform: none;
+  margin-top: 5px;
+}
+
+/* Newsletter */
+div.newsletter {
+  position: relative;
+  height: auto;
+}
+
+div.newsletter::before {
+  background-image: url(/img/ImagenesSitioWeb/bg-newsletter.jpg);
+  content: "";
+}
+
+div.newsletter .contenido {
+  color: white;
+  padding: 100px 0;
+  position: relative;
+  text-align: center;
+}
+
+div.newsletter .contenido p{
+  font-size: 1.2em;
+  color: white;
+  text-transform: lowercase;
+}
+
+div.newsletter .contenido h3{
+  color: white;
+  text-transform: uppercase;
+  font-size: 7vw;
+  font-family: "PT Sans", sans-serif;
+}
+
 
 
 
