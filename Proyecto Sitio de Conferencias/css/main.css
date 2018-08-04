@@ -308,9 +308,9 @@ div p .slogan {
   }
 }
 
-.site-header {
+/* .site-header {
   display: none;
-}
+} */
 
 /* Fin header */
 
@@ -351,6 +351,8 @@ nav.navegacion-principal a:last-child:hover {
 nav.navegacion-principal {
   display: none;
 }
+
+/* Fin Barra */
 
 /* Menú movil */
 
@@ -410,9 +412,7 @@ div.menu-movil:hover {
   }
 }
 
-/* Fin Barra */
-
-/* Estilos para la Sección Programa */
+/* Sección Programa */
 
 section.programa {
   position: relative;
@@ -452,7 +452,7 @@ div.programa-evento {
   }
 }
 
-/* Estilos para el menú de Conferencias */
+/* Menú de Conferencias */
 
 nav.menu-programa {
   width: 100%;
@@ -488,7 +488,7 @@ nav.menu-programa a i {
   margin-right: 10px;
 }
 
-/* Estilos para los detalles de los eventos */
+/* Detalles de los eventos */
 
 div.detalle-evento {
   margin-top: 20px;
@@ -507,7 +507,7 @@ div.detalle-evento {
   padding: 0 60px;
 }
 
-/* Estilos para la sección de invitados */
+/* Sección de invitados */
 
 ul.lista-invitados li {
   padding: 10px;
@@ -624,7 +624,7 @@ p.numero {
 }
 
 
-/* tabla de precios */
+/* Tabla de Precios */
 
 ul.lista-precios > li {
   padding: 10px;
@@ -681,7 +681,8 @@ div.tabla-precios p.numero {
   margin-top: 20px;
 }
 
-/* Mama */
+/* Mapa */
+
 div.mapa {
   height: 480px;
   background-color: coral;
@@ -690,7 +691,8 @@ div.testimonial p i {
   color: #fe4918;
 }
 
-/* testimoniales */
+/* Testimoniales */
+
 div.testimoniales {
   padding-bottom: 20px;
 }
@@ -766,6 +768,7 @@ footer.info-testimonial cite span {
 }
 
 /* Newsletter */
+
 div.newsletter {
   position: relative;
   height: auto;
@@ -813,11 +816,11 @@ div.cuenta-regresiva ul li{
 }
 
 /* site-footer */
-footer {
+
+footer.site-footer {
   background-color: #353535;
   padding-top: 40px;
   margin-top: 20px;
-  height: 380px;
 }
 
 footer .contenedor > div {
@@ -856,7 +859,7 @@ footer nav.redes-sociales {
 
 footer > p {
   background-color: #2e2e2e;
-  color: white;  
+  color: white;
   padding: 10px 0;
   text-align: center;
   margin: 0;
