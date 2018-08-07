@@ -117,6 +117,7 @@ body {
 .contenedor {
   width: 98%;
   margin: 0 auto;
+  max-width: 1200px;
 }
 
 @media only screen and( min-width: 480px) {
@@ -657,7 +658,7 @@ div.tabla-precios {
 
 div.tabla-precios:hover {
   transform: scale(1.1);
-  border: 1px solid fe4918;
+  border: 2px solid #fe4918;
   box-shadow: 0 0 50px 0 #666;
 }
 
@@ -864,6 +865,124 @@ footer > p {
   text-align: center;
   margin: 0;
 }
+
+/* Estilos de las hojas internas */
+
+form.registro h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+form.registro label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form.registro h4 {
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid #fe4918;
+  padding-bottom: 10px;
+  font-size: 1.2em;
+}
+
+div.caja {
+  background-color: white;
+  border: 2px solid #e1e1e1;
+  padding: 10px;
+  margin: 10px;
+}
+
+div.campo {
+  padding: 20px;
+}
+
+@media only screen and (min-width: 768px){
+  div.campo {
+    float: left;
+    width: 33.3%;
+  }
+}
+
+div.paquetes .tabla-precios:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+div.paquetes .tabla-precios input {
+  clear: both;
+  width: 100px;
+  margin: 10px auto 0 auto;
+  display: block;
+}
+
+form.registro .contenido-dia{
+  padding: 20px;
+}
+
+@media only screen and (min-width: 768px){
+  form.registro .contenido-dia > div {
+    float: left;
+    width: 33.3%;
+  }
+}
+
+form.registro .contenido-dia p {
+  text-align: left;
+}
+
+form.registro .contenido-dia label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form.registro .contenido-dia label input {
+  margin-right: 10px;
+}
+
+form.registro .contenido-dia time {
+  color: #e33000;
+  font-weight: bold;
+}
+
+/* Resumen Registro */
+div.resumen p {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+div.resumen div.extras {
+  float: left;
+  width: 50%;
+  padding: 30px;
+  text-align: center;
+  display: block;
+}
+
+div.resumen div.extras div.orden {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+div.resumen div.extras div.orden input {
+  margin-top: 10px;
+}
+
+div.resumen div.total {
+  float: right;
+  width: 100%;
+  padding: 30px;
+}
+
+div.resumen div.orden {
+  padding-bottom: 10px;
+}
+
+
+
+
+
 
 
 
