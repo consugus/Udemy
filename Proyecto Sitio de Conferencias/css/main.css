@@ -956,7 +956,7 @@ div.resumen div.extras {
   float: left;
   width: 50%;
   padding: 30px;
-  text-align: center;
+  text-align: left;
   display: block;
 }
 
@@ -973,14 +973,27 @@ div.resumen div.total {
   float: right;
   width: 100%;
   padding: 30px;
+  text-align: center;
 }
 
 div.resumen div.orden {
   padding-bottom: 10px;
 }
 
+#lista-productos {
+  background-color: #e1e1e1;
+  padding: 20ps;
+}
 
+#suma-total {
+  color: #fe4918;
+  font-size: 2em;
+  font-weight: bold;
+}
 
+#boxCalcular{
+  text-align: center;
+}
 
 
 
