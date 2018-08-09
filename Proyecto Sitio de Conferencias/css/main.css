@@ -919,6 +919,7 @@ div.paquetes .tabla-precios input {
 
 form.registro .contenido-dia{
   padding: 20px;
+  display: none;
 }
 
 @media only screen and (min-width: 768px){

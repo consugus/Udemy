@@ -91,8 +91,64 @@
             };
 
             sumaTotal.innerHTML = "$ " + total.toFixed(2);
-
         });
 
-    });
+        pasePorDia.addEventListener("blur", mostrarDias );
+        paseDosDias.addEventListener("blur", mostrarDias );
+        paseCompleto.addEventListener("blur", mostrarDias );
+
+        function mostrarDias(){
+
+            document.getElementById("viernes").style.display = "none";
+            document.getElementById("sabado").style.display = "none";
+            document.getElementById("domingo").style.display = "none";
+
+            if(pasePorDia.value > 0){
+                document.getElementById("viernes").style.display = "block";
+            };
+            if(paseDosDias.value > 0){
+                document.getElementById("viernes").style.display = "block";
+                document.getElementById("sabado").style.display = "block";
+            };
+            if(paseCompleto.value > 0){
+                document.getElementById("viernes").style.display = "block";
+                document.getElementById("sabado").style.display = "block";
+                document.getElementById("domingo").style.display = "block";
+            };
+        };
+
+        nombre.addEventListener("blur", function(){
+            if(this.value == ""){
+                errorDiv.style.display = "block";
+                errorDiv.innerHTML += "El nombre es obligatorio" + "</br>";
+            } else{
+                errorDiv.innerHTML = "";
+            };
+        });
+
+        apellido.addEventListener("blur", function(){
+            if(this.value == ""){
+                errorDiv.style.display = "block";
+                errorDiv.innerHTML += "El apellido es obligatorio" + "</br>";
+            } else{
+                errorDiv.innerHTML = "";
+            };
+        });
+
+        email.addEventListener("blur", function(){
+            if(this.value == ""){
+                errorDiv.style.display = "block";
+                errorDiv.innerHTML += "El eMail es obligatorio" + "</br>";
+            } else{
+                errorDiv.innerHTML = "";
+            };
+        });
+
+        email.addEventListener("blur", function(){
+            if(this.value.indexOf("@") == -1){
+                errorDiv.innerHTML += "El eMail no corresponde a un eMail válido";
+            };
+        });
+
+    }); // DOMContentLoaded
 })();
