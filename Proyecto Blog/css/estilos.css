@@ -107,6 +107,30 @@ aside {
     float: right;
 }
 
+/* servicios */
+div.servicios {
+    margin-top: 30px;
+}
+
+div.servicios nav{
+    background-color: #00b8e4;
+    margin-bottom: 20px;
+}
+
+div.servicios nav a {
+    padding: 10px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+div.servicios nav a:hover {
+    background-color: #db008d;
+}
+
+
+
+
 /* Entradas de Post */
 
 article {
