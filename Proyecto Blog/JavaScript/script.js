@@ -1,17 +1,17 @@
 $(function(){
-    "use sctrict";
-    console.log("Esto es una prueba");
+    "use strict";
+    $("div.nuestros-servicios div:first").show();
+    $(".servicios nav a:first").addClass("activo");
 
-    // mouseenter
-    $("div.logo img").on("mouseenter", function(){
-        console.log("sobre el logo");
+    $(".servicios nav a").on("click", function(){
+        $(".servicios nav a").removeClass("activo");
+        $(this).addClass("activo");
+        var enlace = $(this).attr('href');
+        // console.log("enlace: " + enlace);
+        $(".nuestros-servicios div").fadeOut();
+        $(enlace).fadeIn();
+
+        return false;
     });
-
-    // mouseleave
-    $("div.logo img").on("mouseleave", function(){
-        console.log("fuera del logo");
-    });
-
-
 
 });
