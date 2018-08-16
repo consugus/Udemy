@@ -225,6 +225,25 @@ ul {
 
 /* Fin Estilos Globales */
 
+/* lettering */
+h1.nombre-sitio span {
+  position: relative;
+  text-shadow: 0 0 30px black;
+}
+
+@media only screen and (min-width: 992px){
+  .char1 {top: 20px; right: 20px; color: #fe4918}
+  .char2 {top: 0; left: -20px; color: #fe4918}
+  .char3 {top: 10px; right: 20px; color: #fe4918}
+  .char4 {top: 5px; right: 10px; color: chartreuse}
+  .char5 {top: 15px; right: 10px;}
+  .char6 {top: 5px; left: -5px;}
+  .char7 {top: 20px; left: -10px; color: chartreuse}
+  .char8 {top: 0; left: -10px;}
+  .char9 {top: 10px; right: 20px;}
+  .char10 {top: 20px; right: 20px;}
+}
+
 /* Comienzo header */
 
 .hero {
@@ -292,7 +311,7 @@ p.ciudad {
 }
 
 div h1.nombre-sitio {
-  font-size: 6.9vw;
+  font-size: 8vw;
   text-transform: uppercase;
   font-family: "PT Sans", sans-serif;
   line-height: 1;
@@ -480,17 +499,19 @@ nav.menu-programa a {
 
 nav.menu-programa a.activo::after {
   position: absolute;
-  content: "";
   left: 0;
   right: 0;
-  top: 45px;
+  top: 34px;
+  font-weight: bold;
+  font-size: 1.5em;
   margin: 0 auto 0 auto;
   height: 20px;
   width: 30px;
-  background-image: url(../img/ImagenesSitioWeb/angle-down-solid.svg);
+  content: "\2b9b"; /* la img del curso no funcionaba - este caracter va OK */
+  /* background-image: url(../img/ImagenesSitioWeb/angle-down-solid.svg); */
   background-position: top center;
   background-repeat: no-repeat;
-  -webkit-text-fill-color: #fe4918;
+  color: #fe4918;
 }
 
 @media only screen and (min-width: 768px) {
@@ -528,6 +549,7 @@ div.detalle-evento p i {
 div.detalle-evento {
   padding: 0 60px;
 }
+
 
 /* Sección de invitados */
 
@@ -822,6 +844,10 @@ div.newsletter .contenido h3{
 
 /* Cuenta regresiva */
 
+/* div.cuenta-regresiva{
+  top: 0;
+} */
+
 div.cuenta-regresiva ul li{
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
@@ -888,6 +914,25 @@ footer > p {
 
 /* Estilos de las hojas internas */
 
+body .navegacion-principal .activo {
+  border-bottom: 2px solid #fe4918;
+}
+
+body div.galeria {
+  text-align: center;
+}
+
+/* Conferencias */
+div.galeria {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+div.galeria a img {
+  margin: 3px;
+}
+
+/* Registro */
 form.registro h3 {
   text-align: center;
   text-transform: uppercase;

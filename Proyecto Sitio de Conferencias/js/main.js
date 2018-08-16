@@ -166,6 +166,11 @@
 
 $(function(){
 
+    // Tuneando gdlWebCamp
+    $(".nombre-sitio").lettering();
+
+
+
     // Programa de Conferencias
     $(".programa-evento .info-curso:first").show();
     $(".menu-programa a:first").addClass("activo");
@@ -179,9 +184,24 @@ $(function(){
         // console.log("enlace: " + enlace);
         $(enlace).fadeIn(1000);
 
-
-
-
         return false;
     });
+
+    // Animaciones para los números
+    $(".resumen-evento li:nth-child(1) p").animateNumber({ number: 6}, 1200);
+    $(".resumen-evento li:nth-child(2) p").animateNumber({ number: 15}, 1200);
+    $(".resumen-evento li:nth-child(3) p").animateNumber({ number: 3}, 1200);
+    $(".resumen-evento li:nth-child(4) p").animateNumber({ number: 9}, 1200);
+
+    //Animación cuenta regresiva
+    $(".cuenta-regresiva").countdown("2018/10/23", function(event){
+        $("#dias").html(event.strftime("%D"));
+        $("#horas").html(event.strftime("%H"));
+        $("#min").html(event.strftime("%M"));
+        $("#seg").html(event.strftime("%S"));
+
+    });
+
 });
+
+
