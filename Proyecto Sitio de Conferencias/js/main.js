@@ -37,15 +37,14 @@
         var sumaTotal = document.getElementById("suma-total");
 
 
-
         if(document.getElementById("calcular") ){
 
             calcular.addEventListener("click", function(event){
                 event.preventDefault();
-    
+
                 var total = 0;
                 var listadoCompra = [];
-    
+
                 if(regalo.value === ""){
                     alert("Debes elegir un regalo");
                     regalo.focus();
@@ -54,8 +53,7 @@
                     var subtotal2 = camisas.value * 10 * .93 + etiquetas.value * 2;
                     total = subTotal1 + subtotal2;
                 };
-    
-    
+
                 if(pasePorDia.value != 0){
                     if( parseInt(pasePorDia.value) === 1){
                         listadoCompra.push(pasePorDia.value + " pase por dia");
@@ -63,7 +61,7 @@
                         listadoCompra.push(pasePorDia.value + " pases por dia");
                     };
                 };
-    
+
                 if(paseDosDias.value != 0){
                     if( parseInt(paseDosDias.value) === 1){
                         listadoCompra.push(paseDosDias.value + " pase por 2 dias");
@@ -71,7 +69,7 @@
                         listadoCompra.push(paseDosDias.value + " pases por 2 dias");
                     };
                 };
-    
+
                 if(paseCompleto.value != 0){
                     if( parseInt(paseCompleto.value) === 1){
                         listadoCompra.push(paseCompleto.value + " pase completo");
@@ -79,7 +77,7 @@
                         listadoCompra.push(paseCompleto.value + " pases completo");
                     };
                 };
-    
+
                 if(camisas.value != 0){
                     if( parseInt(camisas.value) === 1){
                         listadoCompra.push(camisas.value + " camisa del evento");
@@ -87,7 +85,7 @@
                         listadoCompra.push(camisas.value + " camisas del evento");
                     };
                 };
-    
+
                 if(etiquetas.value != 0){
                     if( parseInt(camisas.value) === 1){
                         listadoCompra.push(etiquetas.value + " juego de etiquetas");
@@ -95,7 +93,7 @@
                         listadoCompra.push(etiquetas.value + " juegos de etiquetas");
                     };
                 };
-    
+
                 resultado.innerHTML = "";
                 for(var i = 0 ; i < listadoCompra.length ; i++){
                     resultado.innerHTML += listadoCompra[i];
@@ -103,20 +101,20 @@
                         resultado.innerHTML += "</br>";
                     };
                 };
-    
+
                 sumaTotal.innerHTML = "$ " + total.toFixed(2);
             });
-    
+
             pasePorDia.addEventListener("blur", mostrarDias );
             paseDosDias.addEventListener("blur", mostrarDias );
             paseCompleto.addEventListener("blur", mostrarDias );
-    
+
             function mostrarDias(){
-    
+
                 document.getElementById("viernes").style.display = "none";
                 document.getElementById("sabado").style.display = "none";
                 document.getElementById("domingo").style.display = "none";
-    
+
                 if(pasePorDia.value > 0){
                     document.getElementById("viernes").style.display = "block";
                 };
@@ -130,7 +128,7 @@
                     document.getElementById("domingo").style.display = "block";
                 };
             };
-    
+
             nombre.addEventListener("blur", function(){
                 if(this.value == ""){
                     errorDiv.style.display = "block";
@@ -139,7 +137,7 @@
                     errorDiv.innerHTML = "";
                 };
             });
-    
+
             apellido.addEventListener("blur", function(){
                 if(this.value == ""){
                     errorDiv.style.display = "block";
@@ -148,7 +146,7 @@
                     errorDiv.innerHTML = "";
                 };
             });
-    
+
             email.addEventListener("blur", function(){
                 if(this.value == ""){
                     errorDiv.style.display = "block";
@@ -157,7 +155,7 @@
                     errorDiv.innerHTML = "";
                 };
             });
-    
+
             email.addEventListener("blur", function(){
                 if(this.value.indexOf("@") == -1){
                     errorDiv.innerHTML += "El eMail debe ser válido";
@@ -195,7 +193,6 @@ $(function(){
 
 
     // Menú Responsivo para móviles
-
     $(".menu-movil").click(function(){
         if( $(".navegacion-principal").hasClass("hidden") ){
             $(".navegacion-principal").removeClass("hidden");
@@ -211,17 +208,14 @@ $(function(){
 
         $(".menu-programa a").removeClass("activo");
         $(this).addClass("activo");
-
         $(".ocultar").hide();
         var enlace = $(this).attr("href");
-        // console.log("enlace: " + enlace);
         $(enlace).fadeIn(1000);
 
         return false;
     });
 
     // Animaciones para los números
-
     var resumenLista = $(".resumen-evento");
     if(resumenLista.length > 0){
         $(".resumen-evento").waypoint(function(){
@@ -234,17 +228,15 @@ $(function(){
         });
     };
 
-
-
-
     //Animación cuenta regresiva
     $(".cuenta-regresiva").countdown("2018/10/23", function(event){
         $("#dias").html(event.strftime("%D"));
         $("#horas").html(event.strftime("%H"));
         $("#min").html(event.strftime("%M"));
         $("#seg").html(event.strftime("%S"));
-
     });
+
+
 
 });
 
