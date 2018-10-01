@@ -38,7 +38,7 @@
 
 
         if(document.getElementById("calcular") ){
-
+            console.log("entró al if");
             calcular.addEventListener("click", function(event){
                 event.preventDefault();
 
